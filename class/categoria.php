@@ -1,5 +1,12 @@
 <?php
 
-class categoria{
+class categoria {
+    public $tipo;
     
+    public function setTipo($tipo) {
+    $this->tipo = $tipo;
+    }
+
+    
+
 }
