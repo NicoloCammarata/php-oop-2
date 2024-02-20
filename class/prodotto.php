@@ -3,6 +3,7 @@ class prodotto{
     public $marca;
     public $prezzo;
     public $provenienza;
+    public $categoria = 'dog';
 
     public function __construct(
         $marca,

@@ -5,7 +5,6 @@ require_once __DIR__.'../traits/hasWeight.php';
 
 class cibo extends prodotto {
 
-    public $ingredienti;
     use HasWeight;
     
 
@@ -13,15 +12,12 @@ class cibo extends prodotto {
         $marca,
         $prezzo,
         $provenienza,
-        $ingredienti = null,
-        $weigth = null
+        $weight = null
 
     )
     {
         parent::__construct($marca, $prezzo, $provenienza);
-        $this->ingredienti = $ingredienti;
-        $this->weight = $weigth;
-
+        $this->weight = $weight;
     }
 
 
